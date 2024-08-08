@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+:root{
+    --cor_principal:orange;
+    --cor_secundaria:red;
+    --cor_terciaria:brown;
+    --verde_1:rgb(7, 87, 7);
+    --verde_2:rgb(203, 211, 203);
+};

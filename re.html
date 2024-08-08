@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <style>
+        div#endereco{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <label for="tamanho">Tamanho
+        <input type="text" name="tamanho">
+    </label>
+    <br><br>
+    <label for="sabor">Sabor
+        <input type="text" name="sabor">
+    </label>
+    <br><br>
+    <label for="quantidade">Quantidade
+        <input type="text" name="quantidade">
+    </label>
+    <br><br>
+    Selecione a sua preferencia abaixo"
+    <br>
+    <select name="recebimento" id="recebe" onchange="exibeDiv()">
+        <option value="retirar">Retirar no estabelecimento.</option>
+        <option value="receber">Receber em minha localização.</option>
+    </select>
+    <br><br>
+    <div id="endereco">
+        <label for="local">Informe o endereço com ponto de referencia no espaço abaixo! <br>
+            <textarea name="" id="local"></textarea>
+        </label>
+    </div>
+    <label for="pagamento">Metodo de pagamento?
+        <input type="button" value="dinheiro">
+        <input type="button" value="cartao">
+        <input type="button" value="pix">
+    </label>
+    <br><br>Necessita troco?
+    <input type="radio" name="troco" id="nao" value="nao"><label for="nao">Não</label>
+    <input type="radio" name="troco" id="sim" value="sim"><label for="sim">Sim</label>
+    <br>Quanto?
+    <input type="text" id="valor" placeholder="R$00,00">
+    
+    
+</body>
+
+<script>
+    function exibeDiv() {
+        const selecao = document.getElementById('recebe');
+        const enderecoDiv = document.getElementById('endereco');
+
+        if (selecao.value === 'receber') {
+            enderecoDiv.style.display = 'block';
+
+        } else if (selecao.value === 'retirar') {
+            enderecoDiv.style.display = 'none';
+        }
+    }
+    
+    
+    var tamanho = document.getElementById().value;
+    var sabor = document.getElementById().value;
+    var quantidade = document.getElementById().value;
+
+
+</script>
+</html>

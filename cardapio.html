@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/header.css">
+
+    <script src="scripts/script.js"></script>
+    
+    <title>LaPizza</title>
+</head>
+
+<body>
+    <section class="section_init" id="inicio">
+        <header>
+            <nav>
+                <i class="fa-solid fa-pizza-slice" id="icon">
+                    <span>Pizzaria</span>
+                </i>
+                <ul id="nav_list">
+                    <li id="nav-iten"><a href="#init">Inicio</a></li>
+                    <li id="nav-iten"><a href="#cardapio">Cardapio</a></li>
+                    <li id="nav-iten"><a href="#sobre">Sobre</a></li>
+                </ul>
+                <i id="cesta" class="fa-solid fa-basket-shopping"><span id="qnt_itens">0</span></i>
+            </nav>
+        </header>
+    </section>
+
+    <section id="menu">
+        <h1>Pizzas</h1>
+        <div id="size_pizzas">
+            <a href="#options" class="btn" id="pequena">
+            <h2>Pequena, 2 sabores R$42,95</h2> <img src="imagens-pizza/6-pedacos.jfif" alt="imagem, pizza 6 fatias">
+            </a>
+            <a href="#options" class="btn" id="media">
+            <h2>Grande, 4 sabores R$68,53</h2> <img src="imagens-pizza/9-pedacos.jfif" alt="imagem, pizza 9 fatias">
+            </a>
+            <a href="#options" class="btn" id="grande">
+            <h2>Familia, 6 sabores R$79,77</h2> <img src="imagens-pizza/12-pedacos.jfif" alt="imagem, pizza 12 fatias">
+            </a>
+        </div>
+
+        <div class="" id="options">               
+            <h2>Pizzas tradicionais</h2>
+            <div class="sabores"> 
+                <div class="cards" >
+                    <p class="sabor">Calabresa acebolada</p>
+                    <img src="imagens-pizza/pizza-calabresa-acebolada.jpg" alt="imagem, pizza de calabresa com cebola">
+                    <button class="add">acdionar<i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <div class="cards" >
+                    <p class="sabor">Calabresa</p>
+                    <img src="imagens-pizza/pizza-calabresa.png" alt="imagem, pizza de calabresa">
+                    <button class="add">acdionar<i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <div class="cards" >
+                    <p class="sabor">Milho</p>
+                    <img src="imagens-pizza/pizza-de-milho.png" alt="imagem, pizza de pizza de milho">
+                    <button class="add">acdionar<i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <div class="cards" >
+                    <p class="sabor">Frango com catupiry</p>
+                    <img src="imagens-pizza/pizza-frango-com-catupiry.jpg" alt="imagem, pizza de frango catupiry">
+                    <button class="add">acdionar<i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <div class="cards" >
+                    <p class="sabor">Frango com cheddar</p>
+                    <img src="imagens-pizza/pizza-frango-com-cheddar.jpg" alt="imagem, pizza de frango com cheddar">
+                    <button class="add">acdionar<i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <div class="cards">
+                    <p class="sabor">Frango</p>
+                    <img src="imagens-pizza/pizza-frango.png" alt="imagem, pizza de frango">
+                    <button class="add">acdionar<i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+            </div>
+
+            <h2>Pizzas doces</h2>
+            <div class="sabores">
+                <div class="cards">
+                    <p class="sabor">Chocolate com banana</p>
+                    <img src="imagens-pizza/pizza-chocolate-com-banana.jpg" alt="imagem, pizza de chocolate com banana">
+                    <button class="add">acdionar<i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <div class="cards">
+                    <p class="sabor">Confete</p>
+                    <img src="imagens-pizza/pizza-confete.jpeg" alt="imagem, pizza de confete">
+                    <button class="add">acdionar<i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <div class="cards">
+                    <p class="sabor">Morango com chocolate</p>
+                    <img src="imagens-pizza/pizza-morango-chocolate.jpg" alt="imagem, pizza de morango com chocolate">
+                    <button class="add">acdionar<i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+            </div>
+
+            <h2>Bebidas</h2>
+            <div class="bebidas">                
+                <div class="cards">
+                    <p class="sabor">Refrigerente coca-cola 1liro</p>
+                    <img src="imagens-pizza/refri-litro-coca.jpg" alt="">
+                    <button class="add">acdionar<i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <div class="cards">
+                    <p class="sabor">Refrigerante pepsi lata 500ml</p>
+                    <img src="imagens-pizza/refri-lata-pepsi.jpg" alt="">
+                    <button class="add">acdionar<i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <div class="cards">
+                    <p class="sabor">Refrigerante guarana lata 500ml</p>
+                    <img src="imagens-pizza/refri-lata-guarana.jpg" alt="">
+                    <button class="add">acdionar<i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <div class="cards">
+                    <p class="sabor">Refrigerante coca-cola lata 500ml</p>
+                    <img src="imagens-pizza/refri-lata-coca.jpg" alt="">
+                    <button class="add">acdionar<i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <div class="cards">
+                    <p class="sabor">Refrigerante fanta lata 500ml</p>
+                    <img src="imagens-pizza/refri-lata-fanta.jpg" alt="">
+                    <button class="add">acdionar<i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <i class="fa-brands fa-whatsapp">
+        (00) 0 0000-0000
+    </i>
+    <br>
+    <i class="fa-brands fa-instagram">
+         @user
+    </i>
+    <br>
+    <i class="fa-solid fa-bars">
+        Menu closed
+    </i>
+    <br>
+    <i class="fa-solid fa-x">
+        Menu open
+    </i>
+    
+</body>
+</html>

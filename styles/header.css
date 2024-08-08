@@ -1,0 +1,75 @@
+@charset "utf-8";
+@import url(root.css);
+
+body{
+    background-color: var(--verde_2);
+}
+
+nav{
+    color: var(--cor_principal);
+    background-color: rgb(247, 240, 229);
+    padding: 5px 10px 20px;
+    display: flex;
+}
+
+i{
+    font-size: 1.2em;
+    padding: 20px 5px 0px;
+}
+
+i#cesta{
+    position: absolute;
+    float: left;
+    right: 1%;
+    font-size: 1.5em;
+}
+
+i#cesta:hover{
+    color: var(--verde_1);
+    cursor: pointer;
+}
+
+span{
+    color: var(--cor_terciaria);
+}
+
+span#qnt_itens{
+    color: var(--cor_secundaria);
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    font-size: .8em;
+}
+
+nav>ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    line-height: 15px;
+    margin: auto;
+}
+
+ul#size_pizzas>div>h2{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor_principal);
+    padding: 0px 20px 0px;
+    font-size: 1.3em;
+}
+
+a:hover{
+    cursor: pointer;
+    color: var(--verde_1);
+    text-decoration: underline;
+}
+
+h1{
+    color: var(--cor_terciaria);
+}
+
+button.add:hover{
+    cursor: pointer;
+}
